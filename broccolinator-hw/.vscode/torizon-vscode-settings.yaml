@@ -1,0 +1,29 @@
+label: CMake project
+detail: '$(terminal) Creates a minimal sample, using cmake'
+tags:
+  - console
+  - wayland
+env:
+  AR: '%{torizon.prefix}ar'
+  AS: '%{torizon.prefix}as'
+  CC: '%{torizon.prefix}gcc'
+  CXX: '%{torizon.prefix}g++'
+  CPP: '%{torizon.prefix}cpp'
+  STRIP: '%{torizon.prefix}strip'
+  CROSS_COMPILE: '%{torizon.prefix}'
+  LD: '%{torizon.prefix}ld'
+tasks:
+  debug: configure_debug
+  release: configure_release
+properties:
+  props:
+    common:
+      exename: bin/broccolinator-hw
+cmake:
+  kit: Torizon-Debian
+  variants:
+    debug: Debug
+    release: Release
+checkfiles:
+  - CMakeLists.txt
+extversion: 1.2.48

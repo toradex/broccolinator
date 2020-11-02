@@ -1,0 +1,4 @@
+FROM %{torizon.sdkimage}
+
+# This is required to allow regular user inside the container to access docker socket
+RUN addgroup docker && groupmod --non-unique --gid %{torizon.dockergid} docker && adduser torizon docker

@@ -1,0 +1,20 @@
+{
+    "torizon.appfolder": "appconfig_0",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#f0e676",
+        "activityBar.activeBorder": "#13aca0",
+        "activityBar.background": "#f0e676",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#13aca0",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#ebde48",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#e6d61a",
+        "titleBar.activeBackground": "#ebde48",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#ebde4899",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#ebde48"
+}

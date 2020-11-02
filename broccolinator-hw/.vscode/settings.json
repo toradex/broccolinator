@@ -1,0 +1,27 @@
+{
+    "torizon.configuration": "debug",
+    "cmake.configureOnOpen": false,
+    "torizon.appfolder": "appconfig_1",
+    "cmake.installPrefix": "/workspaces/broccolinator/broccolinator-hw/appconfig_1/work/broccolinator-hw",
+    "files.associations": {
+        "type_traits": "cpp"
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#a287ed",
+        "activityBar.activeBorder": "#f7d4c8",
+        "activityBar.background": "#a287ed",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#f7d4c8",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#805be6",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#a287ed",
+        "titleBar.activeBackground": "#805be6",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#805be699",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.remoteColor": "#805be6",
+    "peacock.color": "#805be6"
+}

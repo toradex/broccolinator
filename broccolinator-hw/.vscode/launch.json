@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Torizon-Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "",
+            "miDebuggerServerAddress": "",
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb-multiarch",
+            "targetArchitecture": "",
+            "setupCommands": [
+                {
+                    "description": "Setting architecture",
+                    "text": "set architecture %{torizon.gdb-arch}",
+                    "ignoreFailures": false
+                }
+            ]
+        }
+    ]
+}

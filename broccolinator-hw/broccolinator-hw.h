@@ -1,0 +1,2 @@
+#define broccolinator_hw_VERSION_MAJOR @broccolinator_hw_VERSION_MAJOR@
+#define broccolinator_hw_VERSION_MINOR @broccolinator_hw_VERSION_MINOR@

@@ -1,0 +1,28 @@
+{
+    "name": "torizon_broccolinator-qt-client",
+    "dockerFile": "Dockerfile",
+    "extensions": [
+        "ms-vscode.cpptools"
+    ],
+    "containerEnv": {
+        "AR": "aarch64-linux-gnu-ar",
+        "AS": "aarch64-linux-gnu-as",
+        "CC": "aarch64-linux-gnu-gcc",
+        "CXX": "aarch64-linux-gnu-g++",
+        "CPP": "aarch64-linux-gnu-cpp",
+        "STRIP": "aarch64-linux-gnu-strip",
+        "LD": "aarch64-linux-gnu-ld",
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "QMAKE": "aarch64-linux-gnu-qmake"
+    },
+    "runArgs": [
+        "--network=host"
+    ],
+    "remoteUser": "torizon",
+    "postCreateCommand": "ln -s /home/torizon/.torizon-extension /home/torizon/.vscode-server-insiders/extensions/toradex.torizon ; ln -s /home/torizon/.torizon-extension /home/torizon/.vscode-server/extensions/toradex.torizon ; chgrp docker /var/run/docker.sock",
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.moses,target=/home/torizon/.moses,type=bind",
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+        "source=c:\\Users\\valter.minute\\.vscode\\extensions\\toradex.torizon-early-access-1.2.65,target=/home/torizon/.torizon-extension,type=bind"
+    ]
+}

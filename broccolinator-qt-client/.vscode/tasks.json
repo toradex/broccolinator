@@ -1,0 +1,106 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "qmake_debug",
+            "command": "${env:QMAKE}",
+            "type": "shell",
+            "args": [
+                "CONFIG+=debug"
+            ],
+            "problemMatcher": {
+                "base": "$gcc"
+            },
+            "options": {
+                "env": {
+                    "QMAKE_DESTIDIR": "${command:torizon.ccpp.getTargetFolder}"
+                }
+            }
+        },
+        {
+            "label": "build_debug",
+            "command": "make",
+            "type": "shell",
+            "args": [],
+            "problemMatcher": {
+                "base": "$gcc"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "qmake_debug"
+            ]
+        },
+        {
+            "label": "qmake_release",
+            "command": "${env:QMAKE}",
+            "type": "shell",
+            "args": [],
+            "problemMatcher": {
+                "base": "$gcc"
+            },
+            "options": {
+                "env": {
+                    "QMAKE_DESTIDIR": "${command:torizon.ccpp.getTargetFolder}"
+                }
+            }
+        },
+        {
+            "label": "build_release",
+            "command": "make",
+            "type": "shell",
+            "args": [],
+            "problemMatcher": {
+                "base": "$gcc"
+            },
+            "group": "build"
+        },
+        {
+            "label": "clean",
+            "command": "make",
+            "type": "shell",
+            "args": [
+                "clean"
+            ],
+            "problemMatcher": {
+                "base": "$gcc"
+            },
+            "group": "build",
+            "dependsOn": [
+                "qmake_debug"
+            ]
+        },
+        {
+            "detail": "deploy application to work folder",
+            "label": "deploy",
+            "command": "make",
+            "args": [
+                "install"
+            ],
+            "type": "shell",
+            "group": "none"
+        }
+    ],
+    "options": {
+        "env": {
+            "TORIZON_PROP_APPNAME": "broccolinator-qt-client",
+            "TORIZON_PROP_ARG": "ARG SSHUSERNAME=#%application.username%#\n",
+            "TORIZON_PROP_BUILDCOMMANDS": "",
+            "TORIZON_PROP_BUILDFILES": "",
+            "TORIZON_PROP_COMMAND": "",
+            "TORIZON_PROP_DEVPACKAGES": "",
+            "TORIZON_PROP_ENV": "",
+            "TORIZON_PROP_EXENAME": "broccolinator-qt-client",
+            "TORIZON_PROP_EXPOSE": "",
+            "TORIZON_PROP_EXTRAPACKAGES": "",
+            "TORIZON_PROP_LANGUAGE": "c-cpp-nossh",
+            "TORIZON_PROP_PREINSTALLCOMMANDS": "",
+            "TORIZON_PROP_SDKPOSTINSTALLCOMMANDS": "",
+            "TORIZON_PROP_SDKPREINSTALLCOMMANDS": "",
+            "TORIZON_PROP_TARGETCOMMANDS": "",
+            "TORIZON_PROP_TARGETFILES": ""
+        }
+    }
+}

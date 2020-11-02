@@ -1,0 +1,11 @@
+FROM %{torizon.sdkimage}
+
+# add automake/autoconf to our base SDK container
+RUN apt-get update && apt-get install -y \
+    --no-install-recommends --no-install-suggests \
+    pkg-config cmake curl\
+    && apt-get clean && apt-get autoremove \
+    && rm -rf /var/lib/apt/lists/*
+
+# This is required to allow regular user inside the container to access docker socket
+RUN addgroup docker && groupmod --non-unique --gid %{torizon.dockergid} docker && adduser torizon docker
