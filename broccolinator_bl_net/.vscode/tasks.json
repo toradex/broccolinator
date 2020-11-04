@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/broccolinator_bl_net.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "-r",
+                "${command:torizon.net.getDotNetRuntimeId}",
+                "-o",
+                "${workspaceFolder}/${config:torizon.appfolder}/work/broccolinator_bl_net",
+                "${workspaceFolder}/broccolinator_bl_net.csproj"
+            ],
+            "problemMatcher": "$msCompile",
+            "dependsOn": [
+                "build"
+            ]
+        }
+    ],
+    "options": {
+        "env": {
+            "TORIZON_PROP_APPARGS": "",
+            "TORIZON_PROP_APPNAME": "broccolinator_bl_net",
+            "TORIZON_PROP_ARG": "",
+            "TORIZON_PROP_BUILDCOMMANDS": "",
+            "TORIZON_PROP_BUILDFILES": "",
+            "TORIZON_PROP_COMMAND": "",
+            "TORIZON_PROP_DEVPACKAGES": "",
+            "TORIZON_PROP_ENV": "",
+            "TORIZON_PROP_EXPOSE": "",
+            "TORIZON_PROP_EXTRAPACKAGES": "",
+            "TORIZON_PROP_LANGUAGE": "dotnet",
+            "TORIZON_PROP_PREINSTALLCOMMANDS": "",
+            "TORIZON_PROP_RUNTIME": "dotnet",
+            "TORIZON_PROP_SDKPOSTINSTALLCOMMANDS": "",
+            "TORIZON_PROP_SDKPREINSTALLCOMMANDS": "",
+            "TORIZON_PROP_TARGETCOMMANDS": "",
+            "TORIZON_PROP_TARGETFILES": ""
+        }
+    }
+}

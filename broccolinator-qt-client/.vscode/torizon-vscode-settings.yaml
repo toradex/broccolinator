@@ -1,0 +1,17 @@
+label: Qt Widgets sample
+detail: '$(multiple-windows) Creates a basic Qt sample, with widget-based UI'
+tags:
+  - qt
+env:
+  AR: '%{torizon.prefix}ar'
+  AS: '%{torizon.prefix}as'
+  CC: '%{torizon.prefix}gcc'
+  CXX: '%{torizon.prefix}g++'
+  CPP: '%{torizon.prefix}cpp'
+  STRIP: '%{torizon.prefix}strip'
+  LD: '%{torizon.prefix}ld'
+  CROSS_COMPILE: '%{torizon.prefix}'
+  QMAKE: '%{torizon.prefix}qmake'
+checkfiles:
+  - ^.*\.(pro)$
+extversion: 1.2.49

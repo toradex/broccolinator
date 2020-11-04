@@ -1,0 +1,46 @@
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);*/
+body {
+    background: #00508c;
+    background: -moz-radial-gradient(center, circle cover, #3373a3 0%, #00508c 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3373a3), color-stop(100%, #00508c));
+    background: -webkit-radial-gradient(center, circle cover, #3373a3 0%, #00508c 100%);
+    background: -o-radial-gradient(center, circle cover, #3373a3 0%, #00508c 100%);
+    background: -ms-radial-gradient(center, circle cover, #3373a3 0%, #00508c 100%);
+    background: radial-gradient(center, circle cover, #3373a3 0%, #00508c 100%);
+    background-color:#00508c;
+}
+::selection {
+    background: #96c837;
+}
+.reveal a, .reveal .controls {
+    color: #96c837;
+}
+.reveal {
+    font-family: "Arial", sans-serif;
+}
+/*.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-family: "Montserrat", Impact, sans-serif;
+}
+.reveal h1 {
+  font-size: 3.77em; }
+
+.reveal h2 {
+  font-size: 2.11em; }
+
+.reveal h3 {
+  font-size: 1.55em; }
+
+.reveal h4 {
+  font-size: 1em; }
+
+.reveal h1 {
+  text-shadow: none; }*/
+#logo img {
+    max-height: 4.5em!important;
+}

@@ -1,0 +1,6 @@
+[
+    {
+        "name": "Torizon-Debian",
+        "toolchainFile": "torizon-toolchain.cmake"
+    }
+]

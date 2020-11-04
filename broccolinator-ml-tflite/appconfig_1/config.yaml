@@ -1,0 +1,125 @@
+devices:
+    common: []
+    debug: []
+    release: []
+dockercomposefile:
+    common: ''
+    debug: ''
+    release: ''
+extraparms:
+    common: {}
+    debug: {}
+    release: {}
+id: f4e09e84-273d-4ad0-bf4d-e147a6831fa1
+images:
+    debug: sha256:1bf74488f75ea3e6e23377fdaa53c5c590b9c05357f55aa15405a581ca02887f
+    release: ''
+modificationdate: '2020-10-27T09:43:40.989225'
+networks:
+    common: []
+    debug: []
+    release: []
+platformid: arm64v8-debian-python3_bullseye
+ports:
+    common:
+        '8080': '8080'
+    debug: {}
+    release: {}
+privatekey: '-----BEGIN RSA PRIVATE KEY-----
+
+    MIIEpQIBAAKCAQEA7r+5P6oBKS8OpvayOFJwa/PMv21RDnBjKqgOQYqBtnXgBZ7X
+
+    XpPYV4jboH6aD1GinCzym/7rs1g4W3rH0IqEi8ZwZkWtZRtTKyIKZ9sApPCfEwla
+
+    bXbTEFW/Wovve6y3/zzpri0MX0BLSHDqcov+ltkpXne0Pf13j04NRMqV0v5XDKpI
+
+    i+ODjZ56z4yLpNTWu/9uZjnRTC4U3i/28XkC5pXVOSBifOjwdA7kvw7KGVElAbR3
+
+    LM1Yz7F7sYuWTbg/hD/gcUWC1dMciCQxdbiFiKd4/VSY3+NI5MOUpeUUPg0oTzVz
+
+    T0icTI4hxdYj0eknPg8YR3EUcO1oUIOO9Rf2RQIDAQABAoIBAQDqlNSmuhpj5cmm
+
+    wZQBBPdTCnwtxnIzFrhJLFC9kyK6LX2M6DJCyk9ySpVJT7t9u79jZkKGheX/FHpj
+
+    X/M+cyuizrqXsnSZeEyyf8LromIyrf4OzUzdazgcv7PBeuc2hFFRZv9P1RFn8ZtG
+
+    tTOWkvj2LK+aE1G06vvzgURGSCsH4Fu+BqCcoYtZsNCNhZA4Icuep34DBiuHlrwm
+
+    dhv4TpOh2Q7eI2jcG0Vr9+Jqo7hw0rqsqRUvEMwGiKSyziQi4Johey6JkEFltNzK
+
+    mAGfpIrTO69vzVsbQNVcORyEt3eivcbWNowGWan/FmqZLKWGT6ryZRTWrEfqG3Lp
+
+    glerq3ZhAoGBAPlYy6bWPVVHlVWlwB64fPauAvjAiMbzcO/Nid4M8WihCqjr7g0C
+
+    K/s04ShL1H13Moi7GTyQce1LcZyA7rUiKo2n3o/Hz8XOgNDYJt9boA8KZ0996HlM
+
+    n3+B0kpgBYfdAxCxvCCm+Mv1gwEfACCk7GQOtvDv718IIFk4pLyEOkGpAoGBAPUe
+
+    iYQK7s2J5PVZ/Xow4uUAoLRO8o9Tt3TuCUxg/cHf8NeFeE7n3xcdJn/Asw+8rwuo
+
+    haZrj5JF9hiPT9tVeiOJ2YRTYqLHJ4pLDuFIu4YRAeXTzAz3krUkgAXPXnWqa08Y
+
+    MNnYAAvX91WXndCQDN7Yyanpu3awYERVoEwZCGk9AoGBAOtXg9/UFc+H4MsVxl84
+
+    gbnSQ7vE/VPKMa4ksRuD29aFKSqGhAiDJD/ViS4fZE+HUYr8DLW9H8p4iqLMjoEn
+
+    3kIVT1slnFV2st5rJUVrlYacqyW8EM9sIp6WSYUpXA7/6wS2vHmVHv5im2NTfytQ
+
+    fk1yFfkSfTuUz/NmIxZLNzEBAoGAEeliWSDHZIOgFIG38RbjbaKHG8XtGaYfcM74
+
+    JPmtcV5g5g7dxL5S4giCSLGXJB5AmFR/N7MCccjk+9R1HGz5mOE44N+LBKQS8psb
+
+    gkDjWx+hCN9aONRahxwcss/9chG697On1jNfhX4Jl9qVcKkmF5611dG7niezUSsE
+
+    pKrrn20CgYEAh/8wNRu4JaikuIjAlKwARZKgJAyWcSa619DsTdyw/yKgreOf0zyk
+
+    SmGIUBHmdyy3lc2Y1SMKPqZdYJnuEOJM9+e8BDaY9QFpWKrVIazbciverOGuh0AP
+
+    GXvPFeA5/YGTq4OZkVARcQKVl+lrjJPtgSZwPtJhFHtf7LzqKWjRgcQ=
+
+    -----END RSA PRIVATE KEY-----
+
+    '
+props:
+    common:
+        appargs: ''
+        appname: broccolinator-ml-tflite
+        arg: ''
+        buildcommands: ''
+        command: ''
+        devpackages: ''
+        env: ''
+        expose: EXPOSE 8080
+        extrapackages: python3-numpy python3-flask python3-pil wget
+        language: python
+        main: main.py
+        preinstallcommands: ''
+        runtime: python3
+        sdkpostinstallcommands: ''
+        sdkpreinstallcommands: ''
+        targetcommands: ''
+        targetfiles: ''
+    debug:
+        arg: 'ARG SSHUSERNAME=#%application.username%#
+
+            '
+    release: {}
+publickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDuv7k/qgEpLw6m9rI4UnBr88y/bVEOcGMqqA5BioG2deAFntdek9hXiNugfpoPUaKcLPKb/uuzWDhbesfQioSLxnBmRa1lG1MrIgpn2wCk8J8TCVptdtMQVb9ai+97rLf/POmuLQxfQEtIcOpyi/6W2Sled7Q9/XePTg1EypXS/lcMqkiL44ONnnrPjIuk1Na7/25mOdFMLhTeL/bxeQLmldU5IGJ86PB0DuS/DsoZUSUBtHcszVjPsXuxi5ZNuD+EP+BxRYLV0xyIJDF1uIWIp3j9VJjf40jkw5Sl5RQ+DShPNXNPSJxMjiHF1iPR6Sc+DxhHcRRw7WhQg471F/ZF
+sdkimages:
+    debug: ''
+    release: ''
+sdksshaddress: null
+shutdownscript:
+    common: ''
+    debug: ''
+    release: ''
+startupscript:
+    common: ''
+    debug: ''
+    release: ''
+username: torizon
+volumes:
+    common: {}
+    debug:
+        /home/torizon/broccolinator-ml-tflite: /broccolinator-ml-tflite,rw
+    release: {}

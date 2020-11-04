@@ -1,0 +1,124 @@
+devices:
+    common: []
+    debug: []
+    release: []
+dockercomposefile:
+    common: ''
+    debug: ''
+    release: ''
+extraparms:
+    common: {}
+    debug: {}
+    release: {}
+id: e7a23813-ba97-4b7f-b9a7-a8bd70d5d2a5
+images:
+    debug: sha256:eba45a6c26db5e1c2a46af96b63538192ab0bf91ef68e4f58e659cd76d19792b
+    release: ''
+modificationdate: '2020-11-04T11:24:46.254095'
+networks:
+    common: []
+    debug: []
+    release: []
+platformid: arm64v8-qt5-vivante-no-ssh_bullseye
+ports:
+    common: {}
+    debug: {}
+    release: {}
+privatekey: '-----BEGIN RSA PRIVATE KEY-----
+
+    MIIEpQIBAAKCAQEA33ArkCuRzZjKextdzhqdjLJiMcx/JZA9aiuNSNtZtqSNaFGw
+
+    GMggdcBLLdMnm9/+vE48Dv8/HHU/c2u7vs2BwW4IF0rM5ZXfU4VdZSv0FG72YBR4
+
+    d561hTe3iI6LyUI0paozh9mh1zBGuMEavlb4Lhp+07sU51E9qBNuggvRwien9SIn
+
+    qrhrDuz6Nd0oJ8IGqTMGl5nqPa5yzly+EVi5moBTcUXaqWM7Xju9vl/Y73wJFZzY
+
+    P/wbIzTpmfOHlzqOlfitW3KHAs+46qcL6rtiZT8tb4YRQrya28J4HcokZQ5iUR3+
+
+    rQsNtjgIY7WzKTQPNW/kMq0f5kzMU+0o+oDabQIDAQABAoIBAB2yBLgmcjxG4DI4
+
+    UuE/fEzksFQ5/3P4lZD0tNRIAsZZXEnPAX5pqpa7tcIjXBJFVM+l/iloFvUrSAGJ
+
+    Aey711Dj1MNzt4OTxZiOEvmNO+UzUh822UPcnfdUjlnhyAY5fFHAKxUVAYNd8ShA
+
+    0dMWL+nAr7ZoGMEddPpPitJRy9DnwKs53qlInPGvvXnV8Mg7ymtMwB5aTcCc5+OY
+
+    Ve3ayDxotLYbotQwkfSmm9E3MuGBk/7DZ4xZVdf4NmN9qNeEsAD9h/QRUwpAk9nT
+
+    +IpjFC8Azrvlelrs28il1AesR0TtUADrLkhkTYrAJ3ilImJcE5co6xeJanRhNWMp
+
+    ZO1EWukCgYEA/DyDaj9gAwR13W37bSkD4VnV20a30hp7KZsdvsaa0sYiyEIPHPOX
+
+    UNWb5SQLJBl2Su0OyawKDEN9C7l4jxwqBR5o1KRxGzVzvjLdDXLk9G5D+M2dRseb
+
+    0uw9T13WQvLILV6ozxK5oyXeCx21qjc2Gp7RBmetQOHj+6nxhIL4RqsCgYEA4sWn
+
+    cXARvhckbenvLHDw+U7rB5osVYnvBiw+inwKMwk+D9VxJNIWvh3bnVrQvFbrik1A
+
+    zpIJ3AwJ+d3GYSN94y3ro0r7zd1cCP2CzAWTGzIliX6TE/KoMjrVJJdECHFgGk/F
+
+    No1AQOofQjPRgeB2DPJst5IVJp71uY0oBWFzw0cCgYEArg9wPFx5e/uS/nfL/jtE
+
+    gzkEG+pEJYfCoCZ7s0/IPVUfYYQ8e6UZMV4G02w5B/NOL0xBXSgMUwQrgXC+4jr0
+
+    QE4I11yW9MjBE2p0Iri7iHWjEEmLk/Fg9X+ym1dM6SwyuSROZ38rfYs/G/qnh0vM
+
+    WThpU/stks2PDvbqRKBAhjsCgYEAxjcF+P2ARKttyDUmPa4qs3/rp6V3Av2h079w
+
+    mxN4xstZV/W1A/4uqtbmU1BCC53eG/ESqHy16YUMYz8aW2Xub1iAEydDmdnWzHTq
+
+    kvJ8dtUKQnhEjrcXlXAfRfCCIu8WlWkMdHZap2L9F5y7j85m4UI1DO+/VRa0qg9b
+
+    3/gie5kCgYEA4VmTUp7Ruc7PtXfXU7wRlPqdR/iI73POYeoLZ+Ou/cWcoO+wwWn6
+
+    bEGMRdChakhggMmr+zFCo41eXLJp5Qbw15aie1k/UsExkvIqQLgAE2ORnjfn/C+F
+
+    rRde6bUgX8SlqglnCAZSow2nXvrMR79fedXWoR3RpRivOFQmon7334o=
+
+    -----END RSA PRIVATE KEY-----
+
+    '
+props:
+    common:
+        appname: broccolinator-qt-client
+        arg: ''
+        buildcommands: ''
+        buildfiles: ''
+        command: ''
+        devpackages: ''
+        env: ''
+        exename: broccolinator-qt-client
+        expose: ''
+        extrapackages: ''
+        language: c-cpp-nossh
+        preinstallcommands: ''
+        sdkpostinstallcommands: ''
+        sdkpreinstallcommands: ''
+        targetcommands: ''
+        targetfiles: ''
+    debug:
+        arg: 'ARG SSHUSERNAME=#%application.username%#
+
+            '
+    release: {}
+publickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfcCuQK5HNmMp7G13OGp2MsmIxzH8lkD1qK41I21m2pI1oUbAYyCB1wEst0yeb3/68TjwO/z8cdT9za7u+zYHBbggXSszlld9ThV1lK/QUbvZgFHh3nrWFN7eIjovJQjSlqjOH2aHXMEa4wRq+VvguGn7TuxTnUT2oE26CC9HCJ6f1IiequGsO7Po13SgnwgapMwaXmeo9rnLOXL4RWLmagFNxRdqpYzteO72+X9jvfAkVnNg//BsjNOmZ84eXOo6V+K1bcocCz7jqpwvqu2JlPy1vhhFCvJrbwngdyiRlDmJRHf6tCw22OAhjtbMpNA81b+QyrR/mTMxT7Sj6gNpt
+sdkimages:
+    debug: sha256:c5756d6e8bf68ed2256339deb063935cdba02d49f52378087f36cd87f9f53d45
+    release: ''
+sdksshaddress: null
+shutdownscript:
+    common: ''
+    debug: ''
+    release: ''
+startupscript:
+    common: ''
+    debug: ''
+    release: ''
+username: torizon
+volumes:
+    common:
+        /tmp: /tmp
+    debug:
+        /home/torizon/broccolinator-qt-client: /broccolinator-qt-client,rw
+    release: {}

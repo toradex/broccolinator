@@ -1,0 +1,130 @@
+devices:
+    common:
+    - /dev/gpiochip0
+    - /dev/gpiochip1
+    - /dev/gpiochip2
+    - /dev/gpiochip3
+    - /dev/gpiochip4
+    - /dev/gpiochip5
+    debug: []
+    release: []
+dockercomposefile:
+    common: ''
+    debug: ''
+    release: ''
+extraparms:
+    common: {}
+    debug: {}
+    release: {}
+id: 33d62c50-7fff-4cca-addf-534ccba19aad
+images:
+    debug: sha256:0ef6225d10edae079e12e124bb8dcbe3512404f72a434b295e9fbfe3f1ffc60a
+    release: ''
+modificationdate: '2020-11-04T10:26:46.888441'
+networks:
+    common: []
+    debug: []
+    release: []
+platformid: arm64v8-debian-no-ssh_bullseye
+ports:
+    common: {}
+    debug: {}
+    release: {}
+privatekey: '-----BEGIN RSA PRIVATE KEY-----
+
+    MIIEowIBAAKCAQEAum7Mz71XDSXcYYWq1yC6V0wM14bETgBBHcbysHUZ8GQljhbq
+
+    6J6hfb+t6C1xlZUOhrhdgHu061tnob7cdXM65JZUQW3wSKE/yQgN1TmIAL95bVWr
+
+    tQn7Apgett0naCEDvH2JJVFS8tZ75c5jRjq22i8YYgiA/uhAVFTjxEi1ug6lL1UQ
+
+    VDFFTBHQYEutR4yjjqlfTV3pVx07dPfDP2S1o2JSyE3Y2JozAxklFfMFeUwdlHUF
+
+    51edwCY4EnIf2PmYF4RsK93q5e8XSU2FCxTWK2Ay3D4Mp36dJbpuxXjwZOSG6mEc
+
+    I7TIcy8RtMunrse/loUMlpNer1kCSvD8siJDpwIDAQABAoIBADJGONL4gyYXhKOD
+
+    0TssJzPtXTUtsXg7V1P5V27AVVtfFkWH5pcOWAw6CWKoBo5I4N7xjr1cHsCtKHgU
+
+    qQy/Iy2LYHM4e2iKm1HR6zEJz6Qr/km+pYwvgdIERZwYbU0GQiStUbOPh6fWsRia
+
+    nGjO4opZ0uB03Jxg8yAKuFUxKlhersYzPGDxDwfHA/xuYHq8W1i46f5g9GuchBdC
+
+    OAiXRegnLcLx4bi33f5i+4cFnqISDO4v7UGiWdkelGILyI7u3EJoEWlxi85mMfvf
+
+    uTbJ1bhKCjpGLOfSOsIy6CoyosVxEl2uL09AvZHnN44cB3RJindgcP/Oh4wwv9Vx
+
+    qnGiv+kCgYEA4ffSayJpDai8aoTZCMVaezopJztIA+GsRu73Zyhq8J39mqJaek+O
+
+    zHQvcJ4NfrcvkhMDV+/vS2oBpRw/u/VJTxoZrDzhbHpLg3nd+iJXZb3T4IFg1mK0
+
+    geKVtkzHaBLUyljjh/J+4zhLM0tfAnMkEu3SsUh1kq68l2JwuntqRiUCgYEA0zXb
+
+    3ebxv092bY6VSvzCUJVzEgce8Ce+G8vq9emlgEC5aqKd8Hsz1V4gY3ObVlpFO/3y
+
+    qlZDb1RTdLi/WmQf1Y1WwzbdA3R15kKR17tt1a3LU1mRrsISTsQcj1/7/N5l5fxP
+
+    687TPPVoKDXGjEjZnx3Ih0ALHr80iusHWdIOmtsCgYEA1gK1KbxUTJhzolqhhtoK
+
+    4Mxrr3lIskxosmGetPelmK+5QVvkXxS8RM0BJSK72zg5eJpDP2TBeOY0GqEPh78+
+
+    qAkrKWIbiXal0CZ6Ym1l4rkPUwCVq1Weaakka5x5+wpiuCXJkLbND/v/1NvcZuCP
+
+    2NGfC0J5/+s4OBQGecdrFnUCgYApIC6cqbBe2QEtWfsV69uGR2Ntmjda+dIZpX4t
+
+    vf382B2CdwGb5tFz9W0HEGapzM/4W31Zz4w37EqHysVvu1k7gtbnEhK87ntah5HQ
+
+    WO2NEtcpdqJYTe+0qJkLDdyKI1/iBVwmhVI6Z2qNkdMEU9cUFX+LXlwL850ug48d
+
+    3Tn8ywKBgDA+uKMFvLPfvZf9SrJCMyQsw35xNHEDJ/KQh2KiXKQ8x9cWBGAgS0t7
+
+    dnbBHncVwJGQFxnLR0nUO0Gt/Q0dqWZRd8ZfJV6K6n4/BPXIwhyI/3f4cypwd7Cd
+
+    LUMeSZXoex7EtpMkoWGCHqSIlK4ROMGuo3Go6iH/1iW9YHpHZT7E
+
+    -----END RSA PRIVATE KEY-----
+
+    '
+props:
+    common:
+        appname: broccolinator-hw
+        arg: ''
+        buildcommands: RUN usermod -a -G gpio torizon
+        buildfiles: ''
+        command: ''
+        devpackages: ' libgpiod-dev:arm64'
+        env: ''
+        exename: bin/broccolinator-hw
+        expose: ''
+        extrapackages: libgpiod2
+        language: c-cpp-nossh
+        preinstallcommands: ''
+        sdkpostinstallcommands: ''
+        sdkpreinstallcommands: ''
+        targetcommands: ''
+        targetfiles: ''
+    debug:
+        arg: 'ARG SSHUSERNAME=#%application.username%#
+
+            '
+    release: {}
+publickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6bszPvVcNJdxhharXILpXTAzXhsROAEEdxvKwdRnwZCWOFuronqF9v63oLXGVlQ6GuF2Ae7TrW2ehvtx1czrkllRBbfBIoT/JCA3VOYgAv3ltVau1CfsCmB623SdoIQO8fYklUVLy1nvlzmNGOrbaLxhiCID+6EBUVOPESLW6DqUvVRBUMUVMEdBgS61HjKOOqV9NXelXHTt098M/ZLWjYlLITdjYmjMDGSUV8wV5TB2UdQXnV53AJjgSch/Y+ZgXhGwr3erl7xdJTYULFNYrYDLcPgynfp0lum7FePBk5IbqYRwjtMhzLxG0y6eux7+WhQyWk16vWQJK8PyyIkOn
+sdkimages:
+    debug: sha256:3f704a35b280b7019b2dceca976e596334832323e455f28b26d8af360a9c673f
+    release: ''
+sdksshaddress: null
+shutdownscript:
+    common: ''
+    debug: ''
+    release: ''
+startupscript:
+    common: ''
+    debug: ''
+    release: ''
+username: torizon
+volumes:
+    common:
+        /tmp: /tmp
+    debug:
+        /home/torizon/broccolinator-hw: /broccolinator-hw,rw
+    release: {}

@@ -8,19 +8,36 @@ In the second one we illustrated the code and showed how it could be built, depl
 ## broccolinator-hw
 
 C++ application used to access hardware (scale, LEDs and switches) using libgpiod
+When opening the folder for the first time don't open it inside container.
+First:
+- execute "Download/update base containers" and wait until the operation is completed
+- execute "Torizon: Rebuild SDK and reload in container"
+- if the project is not loaded inside a container, run "Remote-Containers: rebuild and reload in container"
 
 ## broccolinator-ml-tflite
 
 Python/Flask service exposing a webapi and using a TensorFlowLite model to recognize images. Code is taken from TFLite samples.
+You need to install the python extension for vscode.
 
 ## broccolinator_bl_net
 
 .NET application managing the businness logic with the whole recognition/weight process and storage of information in a database and information provided to the UI clients
+This requires the .NET SDK installed on your PC and the omnisharp extension for vs-code.
 
 ## broccolinator-qt-clients
 
-Qt5 application used as main UI for the system
+Qt5 application used as main UI for the system.
+When opening the folder for the first time don't open it inside container.
+First:
+- execute "Download/update base containers" and wait until the operation is completed
+- execute "Torizon: Rebuild SDK and reload in container"
+- if the project is not loaded inside a container, run "Remote-Containers: rebuild and reload in container"
 
-# tflite-model
+## tflite-model
 
 Python script and images used to generate the tflite model.
+Requires python 3.8 and tensor flow installed on your development machine.
+
+## zerotohero
+
+Slides from the webinar about Visual Studio Code extension for Torizon

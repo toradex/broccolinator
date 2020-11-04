@@ -1,0 +1,34 @@
+version: "2.4"
+
+services:
+
+  influxdb:
+    image: influxdb:1.8
+    volumes:
+      - /home/torizon/influxdb/data:/var/lib/influxdb
+      - /home/torizon/influxdb/influxdb.conf:/etc/influxdb/influxdb.conf:ro
+    networks: 
+      - broccolinator_backend        
+    container_name: influxdb
+
+  chronograf:
+    command: --influxdb-url=http://influxdb:8086
+    container_name: chronograf
+    volumes:
+      - chronograf_data:/var/lib/chronograf
+    networks:
+      - broccolinator_backend            
+      - broccolinator_frontend
+    ports:
+      # expose default web server port:
+      - "8888:8888"
+    image: chronograf:1.8
+    depends_on: 
+      - influxdb
+
+networks:
+  broccolinator_backend: 
+  broccolinator_frontend:
+
+volumes:
+  chronograf_data:
