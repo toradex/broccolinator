@@ -41,3 +41,5 @@ Requires python 3.8 and tensor flow installed on your development machine.
 ## zerotohero
 
 Slides from the webinar about Visual Studio Code extension for Torizon
+
+**Please notice that the application configuration folders contain RSA keys. Those are used during debugging and won't be included in release containers, we anyway suggest to create new projects if you plan to re-use some of the code of this demo, avoiding re-usage of those keys.**
